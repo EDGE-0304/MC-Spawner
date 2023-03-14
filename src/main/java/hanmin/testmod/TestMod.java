@@ -1,5 +1,6 @@
 package hanmin.testmod;
 
+import hanmin.testmod.block.TestBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,8 +17,11 @@ public class TestMod {
 	public TestMod() {
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		
-		MinecraftForge.EVENT_BUS.register(this);
 		TestItem.ITEMS.register(modEventBus);
+		TestBlock.BLOCKS.register(modEventBus);
+		
+		MinecraftForge.EVENT_BUS.register(this);
+		
 		modEventBus.addListener(this::addCreative);
 	}
 	
@@ -25,6 +29,9 @@ public class TestMod {
 		System.out.println("creativeTab");
 		if(e.getTab() == CreativeModeTabs.INGREDIENTS) {
 			e.accept(TestItem.TEST_ITEM);
+		}
+		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+			e.accept(TestBlock.TEST_BLOCK);
 		}
 	}
 }
