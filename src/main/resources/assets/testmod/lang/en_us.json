@@ -1,4 +1,5 @@
 {
 "item.testmod.test_item": "T Coin",
+"item.testmod.pig_spawner": "Pig Spawner",
 "block.testmod.test_block": "T Block"
 }

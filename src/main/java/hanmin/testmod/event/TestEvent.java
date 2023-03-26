@@ -20,11 +20,12 @@ public class TestEvent {
 			player.sendSystemMessage(Component.literal(player.getName().getString() + " is knocking with "+player.getMainHandItem().getItem().getDescription().getString()));
 		}
 		
-		player.sendSystemMessage(Component.literal("in game:"+player.getMainHandItem().getItem().getName(player.getMainHandItem()).toString() ));
-		player.sendSystemMessage(Component.literal("in TestItem:"+TestItem.PIG_SPAWNER.getId().toString()));
+//		player.sendSystemMessage(Component.literal("in game:"+player.getMainHandItem().getItem().getName(player.getMainHandItem()).toString() ));
+//		player.sendSystemMessage(Component.literal(player.getMainHandItem().getItem().getDescriptionId()));
+//		player.sendSystemMessage(player.getMainHandItem().getItem().getDescription());
 		
-		if(player.getMainHandItem().getItem().getDescriptionId().equals(TestItem.PIG_SPAWNER.getId().toString())) {
-			player.sendSystemMessage(player.getMainHandItem().getItem().getDescription());
+		if(player.getMainHandItem().getItem().getDescription().getString().equals("Pig Spawner")) {
+			player.sendSystemMessage(Component.literal("This is pig spawner, not for knocking"));
 		}
 		
 	}
