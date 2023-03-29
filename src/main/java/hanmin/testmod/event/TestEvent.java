@@ -8,6 +8,8 @@ import net.minecraft.world.item.Items;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
+import net.minecraft.core.BlockPos;
 
 @Mod.EventBusSubscriber(modid = TestMod.MODID)
 public class TestEvent {
@@ -26,6 +28,19 @@ public class TestEvent {
 		
 		if(player.getMainHandItem().getItem().getDescription().getString().equals("Pig Spawner")) {
 			player.sendSystemMessage(Component.literal("This is pig spawner, not for knocking"));
+		}
+		
+	}
+	
+	@SubscribeEvent
+	public static void onPlayerRightClickBlock(RightClickBlock e) {
+		Player player = e.getEntity();
+		BlockPos pos = e.getPos();
+		
+		if(player.getMainHandItem().getItem().getDescription().getString().equals("Pig Spawner")) {
+			player.sendSystemMessage(Component.literal("This is pig spawner, not for right clicking"));
+			
+			
 		}
 		
 	}
