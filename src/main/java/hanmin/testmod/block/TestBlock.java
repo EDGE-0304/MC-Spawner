@@ -20,6 +20,9 @@ public class TestBlock {
 	public static final RegistryObject<Block> TEST_BLOCK = registerBlockAndItem("test_block", () -> {
 		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
 	});
+	public static final RegistryObject<Block> B_BLOCK = registerBlockAndItem("b_block", () -> {
+		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
+	});
 	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
 		RegistryObject<T> testBlockInstance = BLOCKS.register(blockName, block);

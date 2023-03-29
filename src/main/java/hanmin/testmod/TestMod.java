@@ -33,6 +33,7 @@ public class TestMod {
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
+			e.accept(TestBlock.B_BLOCK);
 		}
 	}
 }
