@@ -20,6 +20,8 @@ public class TestMod {
 		TestItem.ITEMS.register(modEventBus);
 		TestBlock.BLOCKS.register(modEventBus);
 		
+		
+		
 		MinecraftForge.EVENT_BUS.register(this);
 		
 		modEventBus.addListener(this::addCreative);
