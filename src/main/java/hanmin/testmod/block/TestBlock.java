@@ -17,10 +17,19 @@ import net.minecraft.world.level.block.BedBlock;
 
 public class TestBlock {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MODID);
+	
+	//Hanmin Block 
 	public static final RegistryObject<Block> TEST_BLOCK = registerBlockAndItem("test_block", () -> {
 		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
 	});
+	
+	//Haitian Block
 	public static final RegistryObject<Block> C_BLOCK = registerBlockAndItem("c_block", () -> {
+		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
+	});
+	
+	//Chenshun Block
+	public static final RegistryObject<Block> SB_BLOCK = registerBlockAndItem("sb_block", () -> {
 		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
 	});
 	

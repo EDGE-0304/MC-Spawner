@@ -1,5 +1,7 @@
 package hanmin.testmod;
 
+import org.openjdk.nashorn.internal.ir.LexicalContextNode.Acceptor;
+
 import hanmin.testmod.block.TestBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,6 +38,7 @@ public class TestMod {
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
 			e.accept(TestBlock.C_BLOCK);
+			e.accept(TestBlock.SB_BLOCK);
 		}
 	}
 }
