@@ -37,8 +37,9 @@ public class TestMod {
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
+			e.accept(TestBlock.C_BLOCK);
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
-			e.accept(TestBlock.B_BLOCK);
+			e.accept(TestBlock.HORSESPAWNER_BLOCK);
 			e.accept(MessageBlock.MESSAGE_BLOCK);
 			e.accept(YanTestBlock.YAN_TEST_BLOCK);
 		}
