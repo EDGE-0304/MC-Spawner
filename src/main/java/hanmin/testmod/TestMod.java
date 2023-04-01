@@ -1,6 +1,8 @@
 package hanmin.testmod;
 
+import hanmin.testmod.block.MessageBlock;
 import hanmin.testmod.block.TestBlock;
+import yan.yantestmod.block.YanTestBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -19,6 +21,8 @@ public class TestMod {
 		
 		TestItem.ITEMS.register(modEventBus);
 		TestBlock.BLOCKS.register(modEventBus);
+		MessageBlock.BLOCKS.register(modEventBus);
+		YanTestBlock.BLOCKS.register(modEventBus);
 		
 		MinecraftForge.EVENT_BUS.register(this);
 		
@@ -34,6 +38,10 @@ public class TestMod {
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
 			e.accept(TestBlock.C_BLOCK);
+			e.accept(TestBlock.PIGSPAWNER_BLOCK);
+			e.accept(TestBlock.B_BLOCK);
+			e.accept(MessageBlock.MESSAGE_BLOCK);
+			e.accept(YanTestBlock.YAN_TEST_BLOCK);
 		}
 	}
 }

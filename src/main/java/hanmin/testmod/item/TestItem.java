@@ -20,8 +20,9 @@ public class TestItem extends Item {
 	);
 	
 	public static RegistryObject<Item> PIG_SPAWNER = ITEMS.register("pig_spawner",() -> {
-		return new TestItem();}
+		return new PigSpawner(new Properties());}
 	);
+	
 	
 	
 	public static void register(IEventBus eventBus) {
