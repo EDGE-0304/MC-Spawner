@@ -21,8 +21,12 @@ public class TestBlock extends Block {
 	}
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MODID);
+	
 	public static final RegistryObject<Block> TEST_BLOCK = registerBlockAndItem("test_block", () -> {
 		return new TestBlock();
+	});
+	public static final RegistryObject<Block> PIGSPAWNER_BLOCK = registerBlockAndItem("pigspawner_block", () -> {
+		return new PigSpawnerBlock();
 	});
 	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
