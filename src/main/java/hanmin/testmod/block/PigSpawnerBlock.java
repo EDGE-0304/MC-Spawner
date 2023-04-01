@@ -2,9 +2,15 @@ package hanmin.testmod.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -23,6 +29,9 @@ public class PigSpawnerBlock extends Block {
 			InteractionHand hand, BlockHitResult blockHitResult) {
 		if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
             player.sendSystemMessage(Component.literal("Right Clicked this!"));
+            EntityType<Pig> entitytype = EntityType.PIG;
+            ItemStack itemstack = player.getItemInHand(hand);
+			Entity entity = entitytype.spawn((ServerLevel)level, itemstack , player, pos.above(), MobSpawnType.SPAWN_EGG, false, false);
         }
 		return super.use(blockstate, level, pos, player, hand, blockHitResult);
 	}
