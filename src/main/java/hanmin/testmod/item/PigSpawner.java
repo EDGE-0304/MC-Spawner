@@ -54,7 +54,19 @@ public class PigSpawner extends Item {
 	            
 	            EntityType<Pig> entitytype = EntityType.PIG;
 	            Entity entity = entitytype.spawn((ServerLevel)level, itemstack, player, blockpos.above(), MobSpawnType.SPAWN_EGG, false, false);
-	            return InteractionResultHolder.pass(itemstack);
+	            if (entity == null) {
+	            	System.out.println("null entity");
+	               return InteractionResultHolder.pass(itemstack);
+	            } else {
+	            	System.out.println(entity.getName());
+	               if (!player.getAbilities().instabuild) {
+	                  itemstack.shrink(1);
+	               }
+
+	               player.awardStat(Stats.ITEM_USED.get(this));
+	               level.gameEvent(player, GameEvent.ENTITY_PLACE, entity.position());
+	               return InteractionResultHolder.consume(itemstack);
+	            }
 	         } else {
 	        	 System.out.println("second else(failed)");
 	        	 player.sendSystemMessage(Component.literal("Only working on test block"));
