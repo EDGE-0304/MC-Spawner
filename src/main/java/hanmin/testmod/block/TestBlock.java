@@ -28,8 +28,8 @@ public class TestBlock extends Block {
 	public static final RegistryObject<Block> PIGSPAWNER_BLOCK = registerBlockAndItem("pigspawner_block", () -> {
 		return new PigSpawnerBlock();
 	});
-	public static final RegistryObject<Block> B_BLOCK = registerBlockAndItem("b_block", () -> {
-		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
+	public static final RegistryObject<Block> HORSESPAWNER_BLOCK = registerBlockAndItem("horsespawner_block", () -> {
+		return new HorseSpawnerBlock();
 	});
 	public static final RegistryObject<Block> C_BLOCK = registerBlockAndItem("c_block", () -> {
 		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
