@@ -24,9 +24,6 @@ public class TestEvent {
 //		player.sendSystemMessage(Component.literal(player.getMainHandItem().getItem().getDescriptionId()));
 //		player.sendSystemMessage(player.getMainHandItem().getItem().getDescription());
 		
-		if(player.getMainHandItem().getItem().getDescription().getString().equals("Pig Spawner")) {
-			player.sendSystemMessage(Component.literal("This is pig spawner, not for knocking"));
-		}
 		
 	}
 	
