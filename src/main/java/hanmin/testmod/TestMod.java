@@ -1,5 +1,7 @@
 package hanmin.testmod;
 
+import org.openjdk.nashorn.internal.ir.LexicalContextNode.Acceptor;
+
 import hanmin.testmod.block.TestBlock;
 import yan.yantestmod.block.YanTestBlock;
 import hanmin.testmod.item.TestItem;
@@ -22,6 +24,8 @@ public class TestMod {
 		TestBlock.BLOCKS.register(modEventBus);
 		YanTestBlock.BLOCKS.register(modEventBus);
 		
+		
+		
 		MinecraftForge.EVENT_BUS.register(this);
 		
 		modEventBus.addListener(this::addCreative);
@@ -35,7 +39,9 @@ public class TestMod {
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
-			e.accept(YanTestBlock.YAN_TEST_BLOCK);
+			e.accept(TestBlock.C_BLOCK);
+			e.accept(TestBlock.CS_BLOCK);
+      e.accept(YanTestBlock.YAN_TEST_BLOCK);
 		}
 	}
 }

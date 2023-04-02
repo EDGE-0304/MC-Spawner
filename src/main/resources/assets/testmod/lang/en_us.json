@@ -1,6 +1,9 @@
 {
-  "item.testmod.test_item": "T Coin",
-  "item.testmod.pig_spawner": "Pig Spawner",
-  "block.testmod.test_block": "T Block",
-  "block.testmod.yan_test_block": "Yan Block"
+
+  
+"item.testmod.test_item": "T Coin",
+"item.testmod.pig_spawner": "Pig Spawner",
+  "block.testmod.test_block": "T Bloc",
+"block.testmod.cs_block": "ChenShun"
+"block.testmod.yan_test_block": "Yan Block"
 }
