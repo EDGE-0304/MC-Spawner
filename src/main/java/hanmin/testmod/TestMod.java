@@ -1,6 +1,5 @@
 package hanmin.testmod;
 
-import org.openjdk.nashorn.internal.ir.LexicalContextNode.Acceptor;
 
 import hanmin.testmod.block.TestBlock;
 import yan.yantestmod.block.YanTestBlock;
@@ -43,6 +42,7 @@ public class TestMod {
 			e.accept(TestBlock.CS_BLOCK);
             e.accept(YanTestBlock.YAN_TEST_BLOCK);
             e.accept(TestBlock.CHICKEN_BLOCK);
+            e.accept(TestBlock.CAT_BLOCK);
 		}
 	}
 }

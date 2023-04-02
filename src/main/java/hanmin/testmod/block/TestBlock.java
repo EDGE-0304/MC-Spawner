@@ -6,6 +6,7 @@ import java.util.function.Supplier;
 
 import hanmin.testmod.TestMod;
 import hanmin.testmod.block.ChickenBlock;
+import hanmin.testmod.block.CatBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -40,6 +41,10 @@ public class TestBlock {
 		return new ChickenBlock();
 	});
 	
+	public static final RegistryObject<Block> CAT_BLOCK = registerBlockAndItem("cat_block", () -> {
+		return new CatBlock();
+	});
+
 	
 	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
