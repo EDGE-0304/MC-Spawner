@@ -2,7 +2,10 @@ package hanmin.testmod.block;
 
 import java.util.function.Supplier;
 
+
+
 import hanmin.testmod.TestMod;
+import hanmin.testmod.block.ChickenBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -32,7 +35,10 @@ public class TestBlock {
 	public static final RegistryObject<Block> CS_BLOCK = registerBlockAndItem("cs_block", () -> {
 		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
 	});
-	
+	//Chicken Spawner
+	public static final RegistryObject<Block> CHICKEN_BLOCK = registerBlockAndItem("chicken_block", () -> {
+		return new ChickenBlock();
+	});
 	
 	
 	
