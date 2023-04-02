@@ -29,7 +29,7 @@ public class TestBlock {
 	});
 	
 	//Chenshun Block
-	public static final RegistryObject<Block> SB_BLOCK = registerBlockAndItem("sb_block", () -> {
+	public static final RegistryObject<Block> CS_BLOCK = registerBlockAndItem("cs_block", () -> {
 		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
 	});
 	

@@ -38,7 +38,7 @@ public class TestMod {
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
 			e.accept(TestBlock.C_BLOCK);
-			e.accept(TestBlock.SB_BLOCK);
+			e.accept(TestBlock.CS_BLOCK);
 		}
 	}
 }
