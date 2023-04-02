@@ -32,7 +32,10 @@ public class TestBlock {
 	public static final RegistryObject<Block> CS_BLOCK = registerBlockAndItem("cs_block", () -> {
 		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
 	});
-	
+	//Duck Spawner
+	public static final RegistryObject<Block> DUCK_BLOCK = registerBlockAndItem("duck_block", () -> {
+		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
+	});
 	
 	
 	

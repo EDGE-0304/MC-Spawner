@@ -41,7 +41,8 @@ public class TestMod {
 			e.accept(TestBlock.TEST_BLOCK);
 			e.accept(TestBlock.C_BLOCK);
 			e.accept(TestBlock.CS_BLOCK);
-      e.accept(YanTestBlock.YAN_TEST_BLOCK);
+            e.accept(YanTestBlock.YAN_TEST_BLOCK);
+            e.accept(TestBlock.DUCK_BLOCK);
 		}
 	}
 }
