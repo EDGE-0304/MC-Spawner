@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-		"all": "testmod:block/duck_block"
+		"all": "testmod:block/chicken_block"
 	}
 }

@@ -9,6 +9,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -20,9 +21,9 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 
 
-public class DuckBlock {
+public class ChickenBlock extends Block{
 
-	public DuckBlock() {
+	public ChickenBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops());
 	}
 	
@@ -31,7 +32,7 @@ public class DuckBlock {
 			InteractionHand hand, BlockHitResult blockHitResult) {
 		if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
             player.sendSystemMessage(Component.literal("Right Clicked this!"));
-            EntityType<Duck> entitytype = EntityType.DUCK;
+            EntityType<Chicken> entitytype = EntityType.CHICKEN;
             ItemStack itemstack = player.getItemInHand(hand);
 			Entity entity = entitytype.spawn((ServerLevel)level, itemstack , player, pos.above(), MobSpawnType.SPAWN_EGG, false, false);
         }
