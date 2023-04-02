@@ -22,7 +22,7 @@ public class YanTestBlock extends Block {
 	});
 	
 	public YanTestBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL));
+		super(BlockBehaviour.Properties.of(Material.STONE));
 	}
 	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){

@@ -1,8 +1,10 @@
 package hanmin.testmod;
 
 
-
 import hanmin.testmod.block.MessageBlock;
+
+
+
 import hanmin.testmod.block.TestBlock;
 import yan.yantestmod.block.YanTestBlock;
 import hanmin.testmod.item.TestItem;
@@ -47,10 +49,14 @@ public class TestMod {
        
             e.accept(TestBlock.CHICKEN_BLOCK);
 
+            e.accept(TestBlock.CAT_BLOCK);
+
+
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
 			e.accept(TestBlock.HORSESPAWNER_BLOCK);
 			e.accept(MessageBlock.MESSAGE_BLOCK);
 			e.accept(YanTestBlock.YAN_TEST_BLOCK);
+
 
 		}
 	}
