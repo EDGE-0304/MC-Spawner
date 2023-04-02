@@ -2,6 +2,7 @@ package hanmin.testmod;
 
 
 
+import hanmin.testmod.block.MessageBlock;
 import hanmin.testmod.block.TestBlock;
 import yan.yantestmod.block.YanTestBlock;
 import hanmin.testmod.item.TestItem;
