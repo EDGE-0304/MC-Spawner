@@ -53,7 +53,7 @@ public class TestMod {
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
 			e.accept(TestBlock.HORSESPAWNER_BLOCK);
 			e.accept(MessageBlock.MESSAGE_BLOCK);
-			e.accept(YanTestBlock.YAN_TEST_BLOCK);
+			e.accept(TestBlock.YAN_BLOCK);
 
 
 		}
