@@ -1,7 +1,7 @@
 package hanmin.testmod.item;
 
+import hanmin.testmod.block.TestBlock;
 
-public class ChickenSpawner {
 
 
 import com.ibm.icu.impl.number.Properties;

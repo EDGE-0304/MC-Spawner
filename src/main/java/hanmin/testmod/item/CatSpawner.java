@@ -9,35 +9,27 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.animal.Cat;
 import net.minecraft.world.entity.animal.Pig;
+import net.minecraft.world.entity.animal.Cat;
+import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
 public class CatSpawner extends Item {
-	
-	
-//	public PigSpawner(Properties p_43210_) {
-//		super(EntityType.PIG, 0, 0, p_43210_);
-//	}
-
 	public CatSpawner(Properties properties) {
 		super(properties);
 	}
-
+	
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-		System.out.println("cat spawner use method called");
+		System.out.println("pig spawner use method called");
 	      ItemStack itemstack = player.getItemInHand(hand);
 	      
 	      HitResult hitresult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.SOURCE_ONLY);
@@ -76,3 +68,4 @@ public class CatSpawner extends Item {
 	      }
 	   }
 }
+
