@@ -38,6 +38,7 @@ public class TestMod {
 		if(e.getTab() == CreativeModeTabs.INGREDIENTS) {
 			e.accept(TestItem.TEST_ITEM);
 			e.accept(TestItem.PIG_SPAWNER);
+			e.accept(TestItem.HORSE_SPAWNER);
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
