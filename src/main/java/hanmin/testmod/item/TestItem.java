@@ -37,7 +37,10 @@ public class TestItem extends Item {
 
 	);
 
-	
+	public static RegistryObject<Item> CAT_SPAWNER = ITEMS.register("cat_spawner",() -> {
+		return new CatSpawner(new Properties());}
+
+	);
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
