@@ -25,8 +25,13 @@ public class TestItem extends Item {
 		return new PigSpawner(new Properties());}
 	);
 	
+
 	public static RegistryObject<Item> CHICKEN_SPAWNER = ITEMS.register("chicken_spawner",() -> {
 		return new ChickenSpawner(new Properties());}
+
+	public static RegistryObject<Item> HORSE_SPAWNER = ITEMS.register("horse_spawner",() -> {
+		return new HorseSpawner(new Properties());}
+
 	);
 	
 	
