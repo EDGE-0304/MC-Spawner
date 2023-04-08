@@ -1,6 +1,8 @@
 package hanmin.testmod;
 
+
 import hanmin.testmod.block.MessageBlock;
+
 
 
 import hanmin.testmod.block.TestBlock;
@@ -38,7 +40,12 @@ public class TestMod {
 		if(e.getTab() == CreativeModeTabs.INGREDIENTS) {
 			e.accept(TestItem.TEST_ITEM);
 			e.accept(TestItem.PIG_SPAWNER);
+
+			e.accept(TestItem.CHICKEN_SPAWNER);
+
 			e.accept(TestItem.HORSE_SPAWNER);
+			e.accept(TestItem.CAT_SPAWNER);
+
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
@@ -50,11 +57,11 @@ public class TestMod {
 
             e.accept(TestBlock.CAT_BLOCK);
 
-
+            
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
 			e.accept(TestBlock.HORSESPAWNER_BLOCK);
 			e.accept(MessageBlock.MESSAGE_BLOCK);
-			e.accept(YanTestBlock.YAN_TEST_BLOCK);
+			e.accept(TestBlock.YAN_BLOCK);
 
 
 		}

@@ -50,7 +50,11 @@ public class TestBlock extends Block {
 	public static final RegistryObject<Block> CHICKEN_BLOCK = registerBlockAndItem("chicken_block", () -> {
 		return new ChickenBlock();
 	});
-	
+	//Yan Block
+	public static final RegistryObject<Block> YAN_BLOCK = registerBlockAndItem("yan_block", () -> {
+		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
+	});
+	//Cat Spawner
 	public static final RegistryObject<Block> CAT_BLOCK = registerBlockAndItem("cat_block", () -> {
 		return new CatBlock();
 	});
