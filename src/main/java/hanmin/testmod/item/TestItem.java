@@ -1,5 +1,7 @@
 package hanmin.testmod.item;
 
+import java.util.function.Supplier;
+
 import hanmin.testmod.TestMod;
 import hanmin.testmod.item.custom.CustomArrow;
 import net.minecraft.world.item.Item;
@@ -23,11 +25,22 @@ public class TestItem extends Item {
 		return new PigSpawner(new Properties());}
 	);
 	
+
+
+
+	public static RegistryObject<Item> CHICKEN_SPAWNER = ITEMS.register("chicken_spawner",() -> {
+		return new ChickenSpawner(new Properties());}
+	);
+
 	public static RegistryObject<Item> HORSE_SPAWNER = ITEMS.register("horse_spawner",() -> {
 		return new HorseSpawner(new Properties());}
+
 	);
-	
-	
+
+	public static RegistryObject<Item> CAT_SPAWNER = ITEMS.register("cat_spawner",() -> {
+		return new CatSpawner(new Properties());}
+
+	);
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
