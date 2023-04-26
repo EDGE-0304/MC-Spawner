@@ -36,6 +36,12 @@ public class TestItem extends Item {
 		return new HorseSpawner(new Properties());}
 
 	);
+	
+	public static RegistryObject<Item> WOLF_SPAWNER = ITEMS.register("wolf_spawner",() -> {
+		return new WolfSpawner(new Properties());}
+
+	);
+
 
 	public static RegistryObject<Item> CAT_SPAWNER = ITEMS.register("cat_spawner",() -> {
 		return new CatSpawner(new Properties());}
