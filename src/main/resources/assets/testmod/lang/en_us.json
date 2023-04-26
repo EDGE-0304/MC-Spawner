@@ -10,6 +10,7 @@
   "block.testmod.chicken_block": "ChickenSpawner",
   "block.testmod.yan_test_block": "Yan Block",
   "block.testmod.cat_block": "Cat Spawner",
+  "block.testmod.wolf_block": "Wolf Spawner",
   "item.testmod.horse_spawner": "Horse Spawner",
   "block.testmod.horsespawner_block": "Horse Spawner Block"
 }

@@ -56,6 +56,7 @@ public class TestMod {
             e.accept(TestBlock.CHICKEN_BLOCK);
 
             e.accept(TestBlock.CAT_BLOCK);
+            e.accept(TestBlock.WOLF_BLOCK);
 
             
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
