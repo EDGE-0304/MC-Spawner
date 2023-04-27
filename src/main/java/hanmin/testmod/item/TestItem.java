@@ -53,6 +53,11 @@ public class TestItem extends Item {
 
 	);
 	
+	public static RegistryObject<Item> RABBIT_SPAWNER = ITEMS.register("rabbit_spawner",() -> {
+		return new RabbitSpawner(new Properties());}
+
+	);
+	
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

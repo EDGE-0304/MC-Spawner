@@ -41,24 +41,20 @@ public class TestMod {
 			e.accept(TestItem.WOLF_SPAWNER);
 			e.accept(TestItem.VILLAGER_SPAWNER);
 			e.accept(TestItem.CHICKEN_SPAWNER);
-
+			e.accept(TestItem.RABBIT_SPAWNER);
 			e.accept(TestItem.HORSE_SPAWNER);
 			e.accept(TestItem.CAT_SPAWNER);
 
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
-			e.accept(TestBlock.VILLAGER_BLOCK);
-			
-       
+			e.accept(TestBlock.VILLAGER_BLOCK);			       
             e.accept(TestBlock.CHICKEN_BLOCK);
-
             e.accept(TestBlock.CAT_BLOCK);
             e.accept(TestBlock.WOLF_BLOCK);
-
-            
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
 			e.accept(TestBlock.HORSESPAWNER_BLOCK);
+			e.accept(TestBlock.RABBIT_BLOCK);
 			e.accept(MessageBlock.MESSAGE_BLOCK);
 			
 

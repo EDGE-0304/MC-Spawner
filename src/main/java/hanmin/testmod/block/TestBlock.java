@@ -58,6 +58,10 @@ public class TestBlock extends Block {
 		return new VillagerBlock();
 	});
 	
+	public static final RegistryObject<Block> RABBIT_BLOCK = registerBlockAndItem("rabbit_block", () -> {
+		return new RabbitBlock();
+	});
+	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
 		RegistryObject<T> testBlockInstance = BLOCKS.register(blockName, block);
 		TestItem.ITEMS.register( blockName, ()-> new BlockItem(testBlockInstance.get(), new Item.Properties()) );
