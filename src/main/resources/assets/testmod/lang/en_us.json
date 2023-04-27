@@ -3,6 +3,7 @@
 
   "item.testmod.test_item": "T Coin",
   "item.testmod.pig_spawner": "Pig Spawner",
+  "item.testmod.wolf_spawner": "Wolf Spawner",
   "item.testmod.chicken_spawner": "Chicken Spawner",
   "item.testmod.cat_spawner": "Cat Spawner",
   "block.testmod.test_block": "T Bloc",
@@ -10,6 +11,7 @@
   "block.testmod.chicken_block": "ChickenSpawner",
   "block.testmod.yan_test_block": "Yan Block",
   "block.testmod.cat_block": "Cat Spawner",
+  "block.testmod.wolf_block": "Wolf Spawner",
   "item.testmod.horse_spawner": "Horse Spawner",
   "block.testmod.horsespawner_block": "Horse Spawner Block"
 }

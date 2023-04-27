@@ -58,6 +58,10 @@ public class TestBlock extends Block {
 	public static final RegistryObject<Block> CAT_BLOCK = registerBlockAndItem("cat_block", () -> {
 		return new CatBlock();
 	});
+	
+	public static final RegistryObject<Block> WOLF_BLOCK = registerBlockAndItem("wolf_block", () -> {
+		return new WolfBlock();
+	});
 
 	
 	
