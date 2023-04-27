@@ -40,7 +40,6 @@ public class TestMod {
 		if(e.getTab() == CreativeModeTabs.INGREDIENTS) {
 			e.accept(TestItem.TEST_ITEM);
 			e.accept(TestItem.PIG_SPAWNER);
-			e.accept(TestItem.WOLF_SPAWNER);
 
 			e.accept(TestItem.CHICKEN_SPAWNER);
 
@@ -57,7 +56,6 @@ public class TestMod {
             e.accept(TestBlock.CHICKEN_BLOCK);
 
             e.accept(TestBlock.CAT_BLOCK);
-            e.accept(TestBlock.WOLF_BLOCK);
 
             
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
