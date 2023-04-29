@@ -9,6 +9,7 @@
   "item.testmod.cat_spawner": "Cat Spawner",
   "item.testmod.horse_spawner": "Horse Spawner",
   "item.testmod.rabbit_spawner": "Rabbit Spawner",
+  "item.testmod.turtle_spawner": "Turtle Spawner",
 
 
 
@@ -18,6 +19,7 @@
   "block.testmod.horsespawner_block": "Horse Block",
   "block.testmod.pigspawner_block": "Pig Block",
   "block.testmod.villager_block": "Villager Block",
+  "block.testmod.turtle_block": "Turtle Block",
   "block.testmod.rabbit_block": "Rabbit Block"
 
 }
