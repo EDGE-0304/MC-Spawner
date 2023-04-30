@@ -47,6 +47,22 @@ public class TestItem extends Item {
 		return new CatSpawner(new Properties());}
 
 	);
+	
+	public static RegistryObject<Item> VILLAGER_SPAWNER = ITEMS.register("villager_spawner",() -> {
+		return new VillagerSpawner(new Properties());}
+
+	);
+	
+	public static RegistryObject<Item> RABBIT_SPAWNER = ITEMS.register("rabbit_spawner",() -> {
+		return new RabbitSpawner(new Properties());}
+
+	);
+	
+	public static RegistryObject<Item> TURTLE_SPAWNER = ITEMS.register("turtle_spawner",() -> {
+		return new TurtleSpawner(new Properties());}
+
+	);
+	
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

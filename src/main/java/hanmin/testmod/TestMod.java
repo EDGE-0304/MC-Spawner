@@ -6,7 +6,6 @@ import hanmin.testmod.block.MessageBlock;
 
 
 import hanmin.testmod.block.TestBlock;
-import yan.yantestmod.block.YanTestBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,8 +26,7 @@ public class TestMod {
 		TestBlock.BLOCKS.register(modEventBus);
 
 		MessageBlock.BLOCKS.register(modEventBus);
-		YanTestBlock.BLOCKS.register(modEventBus);
-
+		
 		
 		MinecraftForge.EVENT_BUS.register(this);
 		
@@ -41,29 +39,26 @@ public class TestMod {
 			e.accept(TestItem.TEST_ITEM);
 			e.accept(TestItem.PIG_SPAWNER);
 			e.accept(TestItem.WOLF_SPAWNER);
-
+			e.accept(TestItem.VILLAGER_SPAWNER);
 			e.accept(TestItem.CHICKEN_SPAWNER);
-
+			e.accept(TestItem.RABBIT_SPAWNER);
 			e.accept(TestItem.HORSE_SPAWNER);
 			e.accept(TestItem.CAT_SPAWNER);
+			e.accept(TestItem.TURTLE_SPAWNER);
 
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
 			e.accept(TestBlock.TEST_BLOCK);
-			e.accept(TestBlock.C_BLOCK);
-
-			e.accept(TestBlock.CS_BLOCK);
-       
+			e.accept(TestBlock.VILLAGER_BLOCK);			       
             e.accept(TestBlock.CHICKEN_BLOCK);
-
             e.accept(TestBlock.CAT_BLOCK);
             e.accept(TestBlock.WOLF_BLOCK);
-
-            
 			e.accept(TestBlock.PIGSPAWNER_BLOCK);
 			e.accept(TestBlock.HORSESPAWNER_BLOCK);
+			e.accept(TestBlock.RABBIT_BLOCK);
+			e.accept(TestBlock.TURTLE_BLOCK);
 			e.accept(MessageBlock.MESSAGE_BLOCK);
-			e.accept(TestBlock.YAN_BLOCK);
+			
 
 
 		}
