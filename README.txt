@@ -38,7 +38,3 @@ Forge Forum: https://forums.minecraftforge.net/
 
 Forge Discord: https://discord.gg/UvedJ9m  
 
-
-##Haitian Setup Done
-##Chenshun Setup Done
-##Yan Setup Done
