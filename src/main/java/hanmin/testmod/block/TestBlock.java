@@ -65,6 +65,10 @@ public class TestBlock extends Block {
 	public static final RegistryObject<Block> TURTLE_BLOCK = registerBlockAndItem("turtle_block", () -> {
 		return new TurtleBlock();
 	});
+
+	public static final RegistryObject<Block> FOX_BLOCK = registerBlockAndItem("fox_block", () -> {
+		return new FoxBlock();
+	});
 	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
 		RegistryObject<T> testBlockInstance = BLOCKS.register(blockName, block);

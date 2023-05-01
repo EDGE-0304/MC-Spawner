@@ -23,11 +23,11 @@ public class TestMod {
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		
 		TestItem.ITEMS.register(modEventBus);
+
 		TestBlock.BLOCKS.register(modEventBus);
 
 		MessageBlock.BLOCKS.register(modEventBus);
-		
-		
+
 		MinecraftForge.EVENT_BUS.register(this);
 		
 		modEventBus.addListener(this::addCreative);
@@ -45,6 +45,7 @@ public class TestMod {
 			e.accept(TestItem.HORSE_SPAWNER);
 			e.accept(TestItem.CAT_SPAWNER);
 			e.accept(TestItem.TURTLE_SPAWNER);
+			e.accept(TestItem.FOX_SPAWNER);
 
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -58,7 +59,7 @@ public class TestMod {
 			e.accept(TestBlock.RABBIT_BLOCK);
 			e.accept(TestBlock.TURTLE_BLOCK);
 			e.accept(MessageBlock.MESSAGE_BLOCK);
-			
+			e.accept(TestBlock.FOX_BLOCK);
 
 
 		}

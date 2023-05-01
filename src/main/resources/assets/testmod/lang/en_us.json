@@ -10,6 +10,7 @@
   "item.testmod.horse_spawner": "Horse Spawner",
   "item.testmod.rabbit_spawner": "Rabbit Spawner",
   "item.testmod.turtle_spawner": "Turtle Spawner",
+  "item.testmod.fox_spawner": "Fox Spawner",
 
 
   "block.testmod.test_block": "Test Block",
@@ -20,6 +21,7 @@
   "block.testmod.pigspawner_block": "Pig Block",
   "block.testmod.villager_block": "Villager Block",
   "block.testmod.turtle_block": "Turtle Block",
-  "block.testmod.rabbit_block": "Rabbit Block"
+  "block.testmod.rabbit_block": "Rabbit Block",
+  "block.testmod.fox_block": "Fox Block"
 
 }
