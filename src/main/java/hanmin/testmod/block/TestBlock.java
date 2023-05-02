@@ -70,6 +70,10 @@ public class TestBlock extends Block {
 		return new FoxBlock();
 	});
 	
+	public static final RegistryObject<Block> BAT_BLOCK = registerBlockAndItem("bat_block", () -> {
+		return new BatBlock();
+	});
+	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
 		RegistryObject<T> testBlockInstance = BLOCKS.register(blockName, block);
 		TestItem.ITEMS.register( blockName, ()-> new BlockItem(testBlockInstance.get(), new Item.Properties()) );

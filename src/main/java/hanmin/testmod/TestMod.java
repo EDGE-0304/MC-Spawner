@@ -46,6 +46,7 @@ public class TestMod {
 			e.accept(TestItem.CAT_SPAWNER);
 			e.accept(TestItem.TURTLE_SPAWNER);
 			e.accept(TestItem.FOX_SPAWNER);
+			e.accept(TestItem.BAT_SPAWNER);
 
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -59,6 +60,7 @@ public class TestMod {
 			e.accept(TestBlock.RABBIT_BLOCK);
 			e.accept(TestBlock.TURTLE_BLOCK);
 			e.accept(TestBlock.FOX_BLOCK);
+			e.accept(TestBlock.BAT_BLOCK);
 
 
 

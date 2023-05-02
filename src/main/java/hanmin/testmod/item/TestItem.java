@@ -68,6 +68,10 @@ public class TestItem extends Item {
 
 	);
 	
+	public static RegistryObject<Item> BAT_SPAWNER = ITEMS.register("bat_spawner",() -> {
+		return new BatSpawner(new Properties());}
+
+	);
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
