@@ -1,3 +1,10 @@
+1. Forge&gradle download method
+2. introduction of the project
+3. members and copyright
+
+
+
+
 解释：Hanmin
 为EDGE Mod 开发人员配置开发环境所写
 -------------------------------------------
@@ -38,7 +45,3 @@ Forge Forum: https://forums.minecraftforge.net/
 
 Forge Discord: https://discord.gg/UvedJ9m  
 
-
-##Haitian Setup Done
-##Chenshun Setup Done
-##Yan Setup Done

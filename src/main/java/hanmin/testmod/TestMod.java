@@ -36,7 +36,7 @@ public class TestMod {
 	private void addCreative(CreativeModeTabEvent.BuildContents e) {
 		System.out.println("creativeTab");
 		if(e.getTab() == CreativeModeTabs.INGREDIENTS) {
-			e.accept(TestItem.TEST_ITEM);
+			
 			e.accept(TestItem.PIG_SPAWNER);
 			e.accept(TestItem.WOLF_SPAWNER);
 			e.accept(TestItem.VILLAGER_SPAWNER);
@@ -58,8 +58,8 @@ public class TestMod {
 			e.accept(TestBlock.HORSESPAWNER_BLOCK);
 			e.accept(TestBlock.RABBIT_BLOCK);
 			e.accept(TestBlock.TURTLE_BLOCK);
-			e.accept(MessageBlock.MESSAGE_BLOCK);
 			e.accept(TestBlock.FOX_BLOCK);
+
 
 
 		}
