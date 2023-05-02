@@ -62,6 +62,11 @@ public class TestItem extends Item {
 		return new TurtleSpawner(new Properties());}
 
 	);
+
+	public static RegistryObject<Item> FOX_SPAWNER = ITEMS.register("fox_spawner",() -> {
+		return new FoxSpawner(new Properties());}
+
+	);
 	
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
