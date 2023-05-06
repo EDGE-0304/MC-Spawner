@@ -65,5 +65,31 @@ public class TestMod {
 
 
 		}
+		
+		if(e.getTab() == TestModCreativeModeTab.MC_SPAWNER_TAB) {
+			
+			e.accept(TestItem.PIG_SPAWNER);
+			e.accept(TestItem.WOLF_SPAWNER);
+			e.accept(TestItem.VILLAGER_SPAWNER);
+			e.accept(TestItem.CHICKEN_SPAWNER);
+			e.accept(TestItem.RABBIT_SPAWNER);
+			e.accept(TestItem.HORSE_SPAWNER);
+			e.accept(TestItem.CAT_SPAWNER);
+			e.accept(TestItem.TURTLE_SPAWNER);
+			e.accept(TestItem.FOX_SPAWNER);
+			e.accept(TestItem.BAT_SPAWNER);
+			e.accept(TestBlock.TEST_BLOCK);
+			e.accept(TestBlock.VILLAGER_BLOCK);			       
+            e.accept(TestBlock.CHICKEN_BLOCK);
+            e.accept(TestBlock.CAT_BLOCK);
+            e.accept(TestBlock.WOLF_BLOCK);
+			e.accept(TestBlock.PIGSPAWNER_BLOCK);
+			e.accept(TestBlock.HORSESPAWNER_BLOCK);
+			e.accept(TestBlock.RABBIT_BLOCK);
+			e.accept(TestBlock.TURTLE_BLOCK);
+			e.accept(TestBlock.FOX_BLOCK);
+			e.accept(TestBlock.BAT_BLOCK);
+
+		}
 	}
 }
