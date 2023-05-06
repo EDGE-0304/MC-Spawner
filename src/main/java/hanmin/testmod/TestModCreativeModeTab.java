@@ -20,7 +20,7 @@ public class TestModCreativeModeTab {
 	@SubscribeEvent
 	public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
 		MC_SPAWNER_TAB = event.registerCreativeModeTab(
-				new ResourceLocation(TestMod.MODID, "MC Spawner"),
+				new ResourceLocation(TestMod.MODID, "mc_spawner_tab"),
 				builder -> builder.icon(() -> new ItemStack( TestItem.TEST_ITEM.get() ))
 						.title(Component.translatable("creativemodetab.mc_spawner_tab"))
 				);
