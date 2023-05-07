@@ -25,6 +25,8 @@
   "block.testmod.turtle_block": "Turtle Block",
   "block.testmod.rabbit_block": "Rabbit Block",
   "block.testmod.fox_block": "Fox Block",
-  "block.testmod.bat_block": "Bat Block"
+  "block.testmod.bat_block": "Bat Block",
+  
+  "creativemodetab.mc_spawner_tab": "MC SPAWNER"
 
 }
