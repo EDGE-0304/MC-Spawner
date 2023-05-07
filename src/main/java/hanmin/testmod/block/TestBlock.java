@@ -37,23 +37,14 @@ public class TestBlock extends Block {
 		return new HorseSpawnerBlock();
 	});
 	
-	//Haitian Block
-	public static final RegistryObject<Block> C_BLOCK = registerBlockAndItem("c_block", () -> {
-		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
-	});
 	
-	//Chenshun Block
-	public static final RegistryObject<Block> CS_BLOCK = registerBlockAndItem("cs_block", () -> {
-		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
-	});
+	
+	
 	//Chicken Spawner
 	public static final RegistryObject<Block> CHICKEN_BLOCK = registerBlockAndItem("chicken_block", () -> {
 		return new ChickenBlock();
 	});
-	//Yan Block
-	public static final RegistryObject<Block> YAN_BLOCK = registerBlockAndItem("yan_block", () -> {
-		return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops() );
-	});
+	
 	//Cat Spawner
 	public static final RegistryObject<Block> CAT_BLOCK = registerBlockAndItem("cat_block", () -> {
 		return new CatBlock();
@@ -63,7 +54,25 @@ public class TestBlock extends Block {
 		return new WolfBlock();
 	});
 
+	public static final RegistryObject<Block> VILLAGER_BLOCK = registerBlockAndItem("villager_block", () -> {
+		return new VillagerBlock();
+	});
 	
+	public static final RegistryObject<Block> RABBIT_BLOCK = registerBlockAndItem("rabbit_block", () -> {
+		return new RabbitBlock();
+	});
+	
+	public static final RegistryObject<Block> TURTLE_BLOCK = registerBlockAndItem("turtle_block", () -> {
+		return new TurtleBlock();
+	});
+
+	public static final RegistryObject<Block> FOX_BLOCK = registerBlockAndItem("fox_block", () -> {
+		return new FoxBlock();
+	});
+	
+	public static final RegistryObject<Block> BAT_BLOCK = registerBlockAndItem("bat_block", () -> {
+		return new BatBlock();
+	});
 	
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
 		RegistryObject<T> testBlockInstance = BLOCKS.register(blockName, block);
