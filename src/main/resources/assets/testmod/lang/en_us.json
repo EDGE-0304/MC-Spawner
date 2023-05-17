@@ -12,6 +12,11 @@
   "item.testmod.turtle_spawner": "Turtle Spawner",
   "item.testmod.fox_spawner": "Fox Spawner",
   "item.testmod.bat_spawner": "Bat Spawner",
+  "item.testmod.zombie_spawner": "Zombie Spawner",
+  "item.testmod.dolphin_spawner": "Dolphin Spawner",
+  "item.testmod.donkey_spawner": "Donkey Spawner",
+  "item.testmod.frog_spawner": "Frog Spawner",
+  "item.testmod.llama_spawner": "Llama Spawner",
 
 
 
@@ -26,6 +31,11 @@
   "block.testmod.rabbit_block": "Rabbit Block",
   "block.testmod.fox_block": "Fox Block",
   "block.testmod.bat_block": "Bat Block",
+  "block.testmod.zombie_block": "Zombie Block",
+  "block.testmod.dolphin_block": "Dolphin Block",
+  "block.testmod.donkey_block": "Donkey Block",
+  "block.testmod.frog_block": "Frog Block",
+  "block.testmod.llama_block": "Llama Block",
   
   "creativemodetab.mc_spawner_tab": "MC SPAWNER"
 

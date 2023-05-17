@@ -73,7 +73,26 @@ public class TestBlock extends Block {
 	public static final RegistryObject<Block> BAT_BLOCK = registerBlockAndItem("bat_block", () -> {
 		return new BatBlock();
 	});
-	
+
+	public static final RegistryObject<Block> ZOMBIE_BLOCK = registerBlockAndItem("zombie_block", () -> {
+		return new ZombieBlock();
+	});
+
+	public static final RegistryObject<Block> DOLPHIN_BLOCK = registerBlockAndItem("dolphin_block", () -> {
+		return new DolphinBlock();
+	});
+
+	public static final RegistryObject<Block> DONKEY_BLOCK = registerBlockAndItem("donkey_block", () -> {
+		return new DonkeyBlock();
+	});
+
+	public static final RegistryObject<Block> FROG_BLOCK = registerBlockAndItem("frog_block", () -> {
+		return new FrogBlock();
+	});
+
+	public static final RegistryObject<Block> LLAMA_BLOCK = registerBlockAndItem("llama_block", () -> {
+		return new LlamaBlock();
+	});
 	private static <T extends Block> RegistryObject<T> registerBlockAndItem(String blockName, Supplier<T> block){
 		RegistryObject<T> testBlockInstance = BLOCKS.register(blockName, block);
 		TestItem.ITEMS.register( blockName, ()-> new BlockItem(testBlockInstance.get(), new Item.Properties()) );
