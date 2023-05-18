@@ -47,6 +47,11 @@ public class TestMod {
 			e.accept(TestItem.TURTLE_SPAWNER);
 			e.accept(TestItem.FOX_SPAWNER);
 			e.accept(TestItem.BAT_SPAWNER);
+			e.accept(TestItem.ZOMBIE_SPAWNER);
+			e.accept(TestItem.DOLPHIN_SPAWNER);
+			e.accept(TestItem.DONKEY_SPAWNER);
+			e.accept(TestItem.FROG_SPAWNER);
+			e.accept(TestItem.LLAMA_SPAWNER);
 
 		}
 		if(e.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -61,6 +66,11 @@ public class TestMod {
 			e.accept(TestBlock.TURTLE_BLOCK);
 			e.accept(TestBlock.FOX_BLOCK);
 			e.accept(TestBlock.BAT_BLOCK);
+			e.accept(TestBlock.ZOMBIE_BLOCK);
+			e.accept(TestBlock.DOLPHIN_BLOCK);
+			e.accept(TestBlock.DONKEY_BLOCK);
+			e.accept(TestBlock.FROG_BLOCK);
+			e.accept(TestBlock.LLAMA_BLOCK);
 
 
 
@@ -78,6 +88,11 @@ public class TestMod {
 			e.accept(TestItem.TURTLE_SPAWNER);
 			e.accept(TestItem.FOX_SPAWNER);
 			e.accept(TestItem.BAT_SPAWNER);
+			e.accept(TestItem.ZOMBIE_SPAWNER);
+			e.accept(TestItem.DOLPHIN_SPAWNER);
+			e.accept(TestItem.DONKEY_SPAWNER);
+			e.accept(TestItem.FROG_SPAWNER);
+			e.accept(TestItem.LLAMA_SPAWNER);
 			e.accept(TestBlock.TEST_BLOCK);
 			e.accept(TestBlock.VILLAGER_BLOCK);			       
             e.accept(TestBlock.CHICKEN_BLOCK);
@@ -89,6 +104,11 @@ public class TestMod {
 			e.accept(TestBlock.TURTLE_BLOCK);
 			e.accept(TestBlock.FOX_BLOCK);
 			e.accept(TestBlock.BAT_BLOCK);
+			e.accept(TestBlock.ZOMBIE_BLOCK);
+			e.accept(TestBlock.DOLPHIN_BLOCK);
+			e.accept(TestBlock.DONKEY_BLOCK);
+			e.accept(TestBlock.FROG_BLOCK);
+			e.accept(TestBlock.LLAMA_BLOCK);
 
 		}
 	}
