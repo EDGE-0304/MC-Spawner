@@ -38,17 +38,21 @@ public class BatSpawner extends Item {
 	      
 	      if (hitresult.getType() != HitResult.Type.BLOCK) {
 	         return InteractionResultHolder.pass(itemstack);
-	      } else if (!(level instanceof ServerLevel)) {
+	      } 
+	      else if (!(level instanceof ServerLevel)) {
 	         return InteractionResultHolder.success(itemstack);
-	      } else {
+	      } 
+	      else {
 	    	  System.out.println("first else");
 	         BlockHitResult blockhitresult = (BlockHitResult)hitresult;
 	         BlockPos blockpos = blockhitresult.getBlockPos();
 	         if (level.getBlockState(blockpos).getBlock() instanceof TestBlock) {
 	        	 System.out.println("second if");
 	            
+	        	//creating sentence 
 	            EntityType<Bat> entitytype = EntityType.BAT;
 	            Entity entity = entitytype.spawn((ServerLevel)level, itemstack, player, blockpos.above(), MobSpawnType.SPAWN_EGG, false, false);
+	            
 	            if (entity == null) {
 	            	System.out.println("null entity");
 	               return InteractionResultHolder.pass(itemstack);
@@ -62,7 +66,8 @@ public class BatSpawner extends Item {
 	               level.gameEvent(player, GameEvent.ENTITY_PLACE, entity.position());
 	               return InteractionResultHolder.consume(itemstack);
 	            }
-	         } else {
+	         } 
+	         else {
 	        	 System.out.println("second else(failed)");
 	        	 player.sendSystemMessage(Component.literal("Only working on test block"));
 	            return InteractionResultHolder.fail(itemstack);
