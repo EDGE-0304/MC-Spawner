@@ -28,7 +28,6 @@ public class PigSpawnerBlock extends Block {
 	public InteractionResult use(BlockState blockstate, Level level, BlockPos pos, Player player,
 			InteractionHand hand, BlockHitResult blockHitResult) {
 		if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
-            player.sendSystemMessage(Component.literal("Right Clicked this!"));
             EntityType<Pig> entitytype = EntityType.PIG;
             ItemStack itemstack = player.getItemInHand(hand);
 			Entity entity = entitytype.spawn((ServerLevel)level, itemstack , player, pos.above(), MobSpawnType.SPAWN_EGG, false, false);
