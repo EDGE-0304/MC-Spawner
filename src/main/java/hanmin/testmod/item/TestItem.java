@@ -1,9 +1,6 @@
 package hanmin.testmod.item;
 
-import java.util.function.Supplier;
-
 import hanmin.testmod.TestMod;
-import hanmin.testmod.item.custom.CustomArrow;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;

@@ -1,5 +1,6 @@
 package hanmin.testmod.item;
 
+import hanmin.testmod.block.SpawnerBlock;
 import hanmin.testmod.block.TestBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -43,14 +44,11 @@ public class TestSpawner extends Item {
             BlockHitResult blockhitresult = (BlockHitResult)hitresult;
             BlockPos blockpos = blockhitresult.getBlockPos();
             if (level.getBlockState(blockpos).getBlock() instanceof TestBlock) {
-                System.out.println("second if");
 
                 Entity entity = this.entitytype.spawn((ServerLevel)level, itemstack, player, blockpos.above(), MobSpawnType.SPAWN_EGG, false, false);
                 if (entity == null) {
-                    System.out.println("null entity");
                     return InteractionResultHolder.pass(itemstack);
                 } else {
-                    System.out.println(entity.getName());
                     if (!player.getAbilities().instabuild) {
                         itemstack.shrink(1);
                     }
@@ -59,8 +57,11 @@ public class TestSpawner extends Item {
                     level.gameEvent(player, GameEvent.ENTITY_PLACE, entity.position());
                     return InteractionResultHolder.consume(itemstack);
                 }
-            } else {
-                System.out.println("second else(failed)");
+            } 
+            else if(level.getBlockState(blockpos).getBlock() instanceof SpawnerBlock) {
+            	return InteractionResultHolder.fail(itemstack);
+            }
+            else {
                 player.sendSystemMessage(Component.literal("Only working on test block"));
                 return InteractionResultHolder.fail(itemstack);
             }

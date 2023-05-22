@@ -1,10 +1,5 @@
 package hanmin.testmod;
 
-
-import hanmin.testmod.block.MessageBlock;
-
-
-
 import hanmin.testmod.block.TestBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -25,8 +20,6 @@ public class TestMod {
 		TestItem.ITEMS.register(modEventBus);
 
 		TestBlock.BLOCKS.register(modEventBus);
-
-		MessageBlock.BLOCKS.register(modEventBus);
 
 		MinecraftForge.EVENT_BUS.register(this);
 		

@@ -5,8 +5,6 @@ import java.util.function.Supplier;
 
 
 import hanmin.testmod.TestMod;
-import hanmin.testmod.block.ChickenBlock;
-import hanmin.testmod.block.CatBlock;
 import hanmin.testmod.item.TestItem;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
@@ -18,7 +16,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.minecraft.world.level.block.BedBlock;
 
 public class TestBlock extends Block {
 	public TestBlock() {
