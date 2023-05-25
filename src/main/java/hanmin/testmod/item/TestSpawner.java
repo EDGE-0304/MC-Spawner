@@ -49,6 +49,7 @@ public class TestSpawner extends Item {
                 if (entity == null) {
                     return InteractionResultHolder.pass(itemstack);
                 } else {
+                	player.sendSystemMessage(Component.literal(this.entitytype.getDescription().getString()+" spawned!"));
                     if (!player.getAbilities().instabuild) {
                         itemstack.shrink(1);
                     }
@@ -59,6 +60,7 @@ public class TestSpawner extends Item {
                 }
             } 
             else if(level.getBlockState(blockpos).getBlock() instanceof SpawnerBlock) {
+            	player.sendSystemMessage(Component.literal("Block and item conflict"));
             	return InteractionResultHolder.fail(itemstack);
             }
             else {
