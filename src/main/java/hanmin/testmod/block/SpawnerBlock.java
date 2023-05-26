@@ -1,6 +1,6 @@
 package hanmin.testmod.block;
 
-import hanmin.testmod.item.TestSpawner;
+import hanmin.testmod.item.SpawnerItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -37,7 +37,7 @@ public class SpawnerBlock extends Block {
 			InteractionHand hand, BlockHitResult blockHitResult) {
 		if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
             ItemStack itemstack = player.getItemInHand(hand);
-            if(!(itemstack.getItem() instanceof TestSpawner)) {
+            if(!(itemstack.getItem() instanceof SpawnerItem)) {
             	player.sendSystemMessage(Component.literal(this.entitytype.getDescription().getString()+" spawned!"));
             	Entity entity = this.entitytype.spawn((ServerLevel)level, itemstack , player, pos.above(), MobSpawnType.SPAWN_EGG, false, false);
             }

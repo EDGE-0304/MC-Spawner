@@ -19,11 +19,11 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-public class TestSpawner extends Item {
+public class SpawnerItem extends Item {
 	
 	private EntityType<?> entitytype;
 	
-    public TestSpawner(Properties properties, EntityType<?> entitytype) {
+    public SpawnerItem(Properties properties, EntityType<?> entitytype) {
         super(properties);
         this.entitytype = entitytype;
     }
